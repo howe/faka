@@ -1,0 +1,19 @@
+User-agent: *
+
+Disallow: /bootstrap/
+
+Disallow: /css/
+
+Disallow: /images/
+
+Disallow: /js/
+
+Disallow: /META-INF/
+
+Disallow: /head.jsp
+
+Disallow: /foot.jsp
+
+Disallow: /404.html
+
+Disallow: /result.jsp
