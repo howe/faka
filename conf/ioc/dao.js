@@ -1,6 +1,6 @@
 var ioc = {
 	dataSource : {
-		type :"org.apache.commons.dbcp.BasicDataSource",
+		type :"com.alibaba.druid.pool.DruidDataSource",
 		events : {
 			depose :"close"
 		},
