@@ -2,6 +2,8 @@ package com.esup.faka.bean;
 
 import org.nutz.dao.entity.annotation.*;
 
+import com.esup.faka.tool.DESPlus;
+
 /**
 * 发卡平台系统库存表
 */
@@ -52,11 +54,13 @@ public class Stocks {
 	public void setCardNo(String cardNo) {
 		this.cardNo = cardNo;
 	}
-	public String getCardPwd() {
-		return cardPwd;
+	public String getCardPwd() throws Exception {
+		DESPlus des = new DESPlus();
+		return des.decrypt(cardPwd);
 	}
-	public void setCardPwd(String cardPwd) {
-		this.cardPwd = cardPwd;
+	public void setCardPwd(String cardPwd) throws Exception {
+		DESPlus des = new DESPlus();
+		this.cardPwd = des.encrypt(cardPwd);
 	}
 	public String getCardUrl() {
 		return cardUrl;
