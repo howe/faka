@@ -15,7 +15,7 @@ import org.nutz.log.Logs;
 
 import com.esup.faka.bean.Order;
 
-@At("/Order")
+@At("/order")
 @IocBean(fields={"dao"})
 public class OrderModule extends EntityService<Order>{
 

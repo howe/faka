@@ -15,7 +15,7 @@ import org.nutz.log.Logs;
 
 import com.esup.faka.bean.Type;
 
-@At("/Type")
+@At("/type")
 @IocBean(fields={"dao"})
 public class TypeModule extends EntityService<Type>{
 

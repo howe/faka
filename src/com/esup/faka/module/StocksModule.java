@@ -29,13 +29,35 @@ import org.nutz.log.Logs;
 
 import com.esup.faka.bean.Stocks;
 
-@At("/Stocks")
+@At("/stocks")
 @IocBean(fields={"dao"})
 public class StocksModule extends EntityService<Stocks>{
 
     private static final Log log = Logs.get();
     
     
+    /**
+     * 导入实卡到库存
+     * @param tempFile
+     * @throws InvalidFormatException
+     * @throws IOException
+     * @throws ParseException
+     */
+    @At("/stocks/import")
+    @Ok("json")
+	@AdaptBy(args = {"ioc:upload"})
+    private void importCard(@Param("cardfile") TempFile tempFile) throws InvalidFormatException,
+			IOException, ParseException {
+    	
+    	InputStream is = new FileInputStream(tempFile.getFile());
+    	Workbook wb = WorkbookFactory.create(is);
+    	Sheet sheet = wb.getSheetAt(0);
+    	int coloumNum = sheet.getRow(0).getPhysicalNumberOfCells();
+    	int rowNum = sheet.getLastRowNum();
+    	final Sql[] sqls = new Sql[rowNum];
+    	
+    	
+    }
     
 //    /**
 //	 * 上传考勤汇总
