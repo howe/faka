@@ -32,6 +32,11 @@ public class Stocks {
 	@Column("cardURL")
 	private String cardUrl;
 	/**
+	 * 充值时限
+	 */
+	@Column("expiration")
+	private String expiration;
+	/**
 	 * 卡的状态（0未售出，1已售出）
 	 */
 	@Column("status")
@@ -79,6 +84,12 @@ public class Stocks {
 	}
 	public void setOrderId(Integer orderId) {
 		this.orderId = orderId;
+	}
+	public String getExpiration() {
+		return expiration;
+	}
+	public void setExpiration(String expiration) {
+		this.expiration = expiration;
 	}
 	
 }
