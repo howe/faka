@@ -142,6 +142,21 @@ public class StocksModule extends EntityService<Stocks> {
 	// dao2.execute(sqls);
 	// }
 
+	/**
+	 * 通过订单号与支付流水号提取卡密
+	 * @param orderNO 订单号(淘宝订单号、拍拍订单号)
+	 * @param paymentNO 支付流水号(支付宝流水号、财付通流水号)
+	 * @return
+	 */
+	@At("/stocks/querycardbyorder")
+	@Ok("json")
+	private Stocks queryCardByOrder(@Param("orderno") String orderNO, @Param("paymentno") String paymentNO){
+		
+		Stocks stocks = new Stocks();
+		
+		return stocks;
+	}
+	
 	@At
 	public Object list(@Param("page") int page, @Param("rows") int rows) {
 		if (rows < 1)
