@@ -145,7 +145,7 @@ public class StocksModule extends EntityService<Stocks> {
 	/**
 	 * 通过订单号与支付流水号提取卡密
 	 * @param orderNO 订单号(淘宝订单号、拍拍订单号)
-	 * @param paymentNO 支付流水号(支付宝流水号、财付通流水号)
+	 * @param paymentNO 支付流水号(支付宝交易号、财付通订单号)
 	 * @return
 	 */
 	@At("/stocks/querycardbyorder")

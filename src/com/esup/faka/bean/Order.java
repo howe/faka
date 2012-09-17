@@ -21,7 +21,7 @@ public class Order {
 	@Column("orderNO")
 	private String orderNo;
 	/**
-	 * 支付交易号（支付宝或财付通交易号）
+	 * 支付交易号（支付宝交易号、财付通订单号）
 	 */
 	@Column("paymentNO")
 	private String paymentNo;
@@ -46,13 +46,13 @@ public class Order {
 		return orderNo;
 	}
 	public void setOrderNo(String orderNo) {
-		this.orderNo = orderNo;
+		this.orderNo = orderNo.replace("-", "");
 	}
 	public String getPaymentNo() {
 		return paymentNo;
 	}
 	public void setPaymentNo(String paymentNo) {
-		this.paymentNo = paymentNo;
+		this.paymentNo = paymentNo.replace("-", "");
 	}
 	public java.util.Date getOrderTime() {
 		return orderTime;
