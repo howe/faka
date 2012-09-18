@@ -39,7 +39,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="index.jsp" title="空中充值系统"><strong>空中充值系统</strong></a>
+          <a class="brand" href="index.jsp" title="发卡平台系统"><strong>发卡平台系统</strong></a>
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li class="divider-vertical"></li>

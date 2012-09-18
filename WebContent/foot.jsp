@@ -94,7 +94,7 @@
     	   <hr>
 
       <footer>
-        <p align="center" style="font-size:10px; color:#CCC">&copy; 2012 空中充值系统 - ESUP网游  <a href="http://www.miibeian.gov.cn/" title="ICP备案" target="_blank">苏ICP备10226088号-3</a></p>
+        <p align="center" style="font-size:10px; color:#CCC">&copy; 2012 发卡平台系统 - ESUP网游  <a href="http://www.miibeian.gov.cn/" title="ICP备案" target="_blank">苏ICP备10226088号-3</a></p>
         <p align="center" >
             <a class="weibo" href="http://weibo.com/100110566" title="新浪微博"></a>&nbsp; 
             <a class="qq" href="http://wpa.qq.com/msgrd?v=3&uin=100110566&site=qq&menu=yes" title="即时通讯" target="_blank"></a>&nbsp;
