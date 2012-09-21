@@ -49,7 +49,7 @@
               <li class="divider-vertical"></li>
               <li><a href="#contact" data-toggle="modal">联系</a></li>
               <li class="divider-vertical"></li>
-              <li><a href="query.jsp">自主提取卡密</a></li>
+              <li><a href="query.jsp">自助提取卡密</a></li>
               <li class="divider-vertical"></li>
             </ul>
           </div><!--/.nav-collapse -->

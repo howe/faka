@@ -10,7 +10,7 @@
 <div class="container">
 <%@include file="head.jsp"%>
 <form class="form-horizontal">
-  <legend>自主提卡</legend>
+  <legend>自助提卡</legend>
   <div class="well" style="max-width: 75%; margin: 0 auto 10px;">
     <div class="control-group">
       <label class="control-label" for="inputEmail">订单编号</label>
